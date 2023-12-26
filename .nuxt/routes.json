@@ -1,0 +1,20 @@
+[
+  {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "component": "C:\\\\Users\\\\youss\\\\OneDrive\\\\Escriptori\\\\login-dashboard-olalon\\\\pages\\\\dashboard.vue",
+    "chunkName": "pages/dashboard"
+  },
+  {
+    "name": "register",
+    "path": "/register",
+    "component": "C:\\\\Users\\\\youss\\\\OneDrive\\\\Escriptori\\\\login-dashboard-olalon\\\\pages\\\\register.vue",
+    "chunkName": "pages/register"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\youss\\\\OneDrive\\\\Escriptori\\\\login-dashboard-olalon\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]
