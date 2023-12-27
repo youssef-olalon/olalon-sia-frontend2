@@ -2,19 +2,22 @@
   {
     "name": "dashboard",
     "path": "/dashboard",
-    "component": "C:\\\\Users\\\\youss\\\\OneDrive\\\\Escriptori\\\\login-dashboard-olalon\\\\pages\\\\dashboard.vue",
-    "chunkName": "pages/dashboard"
+    "component": "C:\\\\Users\\\\youss\\\\OneDrive\\\\Documents\\\\GitHub\\\\olalon-sia-frontend2\\\\pages\\\\dashboard.vue",
+    "chunkName": "pages/dashboard",
+    "_name": "_1c0ced5a"
   },
   {
     "name": "register",
     "path": "/register",
-    "component": "C:\\\\Users\\\\youss\\\\OneDrive\\\\Escriptori\\\\login-dashboard-olalon\\\\pages\\\\register.vue",
-    "chunkName": "pages/register"
+    "component": "C:\\\\Users\\\\youss\\\\OneDrive\\\\Documents\\\\GitHub\\\\olalon-sia-frontend2\\\\pages\\\\register.vue",
+    "chunkName": "pages/register",
+    "_name": "_0ea6a0b4"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\youss\\\\OneDrive\\\\Escriptori\\\\login-dashboard-olalon\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "C:\\\\Users\\\\youss\\\\OneDrive\\\\Documents\\\\GitHub\\\\olalon-sia-frontend2\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4f7ba411"
   }
 ]

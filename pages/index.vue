@@ -18,16 +18,13 @@ export default {
     }
   },
 
-  // Métodos del componente
   methods: {
     // Método para enviar el formulario
     submitForm() {
       if (this.username == "youssef" && this.password == "youssef03") {
-        // Si el usuario y contraseña son correctos, cambia el estado de validación y redirige a '/dashboard'
         this.validationStatus = false,
         this.$router.push("/dashboard");
       } else {
-        // Si no son correctos, establece el estado de validación como verdadero
         this.validationStatus = true
 
       }

@@ -1,4 +1,5 @@
 <script>
+
 export default {
   data() {
   return {
@@ -8,6 +9,9 @@ export default {
       // ++
     ],
     search: "",
+    messageDialog: false,
+    editDialog: false,
+    message: '', // Mensaje a enviar
   };
 },
 
@@ -24,21 +28,23 @@ export default {
   methods: {
     // Lógica para enviar mensaje al cliente
     sendMessage(userId) {
-      // Implementa la lógica para enviar mensaje al cliente con ID 'userId'
+      // Imprime el mensaje en la consola por ahora
+      console.log('Mensaje enviado:', this.message);
+      this.messageDialog = false; // Cierra el modal después de enviar el mensaje
     },
     // Lógica para editar compras del cliente
     editPurchases(userId) {
-      // Implementa la lógica para editar las compras del cliente con ID 'userId'
+      this.editDialog = false; 
     },
   },
 };
 </script>
 
 <template>
-  <v-container class="v-container">
+  <v-container class="" style="background-color: white;">
     <!-- Encabezado con el logo -->
     <v-row>
-      <v-col cols="12" class="header">
+      <v-col cols="22" class="header" style="background-color: white;">
         <v-img src="olalon-logo.webp" alt="Logo" class="logo"></v-img>
         <v-btn> Cerrar sesíon</v-btn>
       </v-col>
@@ -47,14 +53,13 @@ export default {
     <!-- Lista de clientes -->
     <v-row>
       <v-col cols="12" class="cliente-card" v-for="(user, index) in filteredUsers" :key="index">
-        <v-card>
+        <v-card class="container__clients">
           <!-- Detalles del cliente -->
           <v-card-title>{{ user.name }}</v-card-title>
           <v-card-text>
             <p>Correo electrónico: {{ user.email }}</p>
             <!-- Otros detalles del cliente: dirección- compras- etc -->
           </v-card-text>
-          <!-- Botones de acción para el cliente -->
           <v-card-actions>
             <v-btn @click="sendMessage(user.id)">Enviar Mensaje</v-btn>
             <v-btn @click="editPurchases(user.id)">Editar Compras</v-btn>
@@ -77,7 +82,12 @@ export default {
 .logo {
   width: 200px;
   height: 100px;
+  border-radius: 30px;
 }
-
+.container__clients {
+  display: flex;
+  width: min-content;
+  flex-direction: column;
+  gap: 50px;
+}
 </style>
-

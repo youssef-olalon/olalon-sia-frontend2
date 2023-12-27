@@ -67,8 +67,6 @@ export function getChildrenComponentInstancesUsingFetch(vm, instances = []) {
 
 export function applyAsyncData (Component, asyncData) {
   if (
-    // For SSR, we once all this function without second param to just apply asyncData
-    // Prevent doing this for each SSR request
     !asyncData && Component.options.__hasNuxtData
   ) {
     return
